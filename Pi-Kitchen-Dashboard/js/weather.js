@@ -32,7 +32,7 @@
  	ws.onmessage = function(event) {
 		var jsontest=JSON.parse(event.data);
  		//var jsontest=JSON.parse('{ "toto" : 1 }');
-        document.getElementById('mpressure').textContent = jsontest.mpress;
+        document.getElementById('mpressure').textContent = jsontest.pressure;
         document.getElementById('mtemp').textContent = jsontest.temp;
         document.getElementById('ip').textContent = jsontest.ip;
      };
